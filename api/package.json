@@ -5,8 +5,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "watch": "nodemon app.js"
+    "start": "node app.ts",
+    "watch": "nodemon app.ts"
   },
   "keywords": [],
   "author": "",
