@@ -1,0 +1,119 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.gitlink{  
+    cursor : "pointer";
+    display : "flex";
+    flex-direction : 'row';
+    justify-content : "center";
+    align-items : "center";
+    gap : "5px";
+    transition: all 0.3s;
+    text-decoration: none;
+    animation: blink 1.2s infinite alternate;
+    margin-top: 8px;
+
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
+.gitlink:hover{
+    color : "rgb(0, 0, 0)";
+    transform: scale(1.05);
+}
+
+.main button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.main img {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.main img:hover {
+    transform: scale(1.2);
+}
+
+.home {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.deconnexion {
+    grid-area: 2 / 3 / 3 / 4;
+    justify-self: flex-end;
+    background: transparent;
+    color : rgb(248 54 120) !important;
+    outline: 1.5px solid rgba(248, 54, 119, 0.433);
+    font-size: 16px;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+}
+
+.deconnexion:hover {
+    box-shadow: inset 0px 2px 1px #ffe7fb;
+    background-color: rgb(248 54 120) ;
+    cursor: pointer;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.deconnexion:active {
+   
+    background-color: rgb(138, 96, 189);
+}
+
+.headerNavBar{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    align-items : center;
+    padding: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+   
+    gap : 10px;
+    transition: all 0.2s;
+    min-height: 40px;
+    width:  -webkit-fill-available;
+    width: -moz-available;
+}
+
+.headerLogo{
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    gap : 0px;
+    transition: all 0.2s;
+    min-height: 40px;
+}
+.headerLogo:hover{
+transform: scale(1.04) !important;
+cursor: pointer;
+transition: all 0.2s;
+filter: grayscale(0.1);
+
+}
+.headerLogo img:hover{
+    transform: none !important;
+    cursor: pointer;
+   
+}

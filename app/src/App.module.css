@@ -1,0 +1,33 @@
+
+.apple_style{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	
+	gap: 0.2rem;
+	padding-top: 9px;
+	width: -webkit-fill-available;
+	width: -moz-available;
+}
+.apple_style span {
+	
+	width: 12px;
+	height: 12px;
+	
+  }
+  .apple_style span:nth-child(1) {
+	background-color: rgb(255 95 87);
+	border-radius: 50%;
+   
+  }
+  .apple_style span:nth-child(2) {
+	background-color: rgb(254 188 46);
+	border-radius: 50%;
+   
+  }
+  .apple_style span:nth-child(3) {
+	background-color: rgb(43 200 64);
+	border-radius: 50%;
+   
+  }

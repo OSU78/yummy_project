@@ -1,0 +1,121 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    padding-top: 1rem !important;
+    max-height: 500px;
+    overflow: scroll;
+    border-radius: 12px;
+    max-width: 750px;
+    width:  -webkit-fill-available;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: rgb(248, 54, 120); /* Title Color */
+    margin-bottom: 1.5rem;
+  }
+  
+  .winners {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .winner_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Epuré à 3 colonnes */
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transition: all 0.2s;
+  }
+  .winner_card:hover {
+    transform: perspective(120px) scale(1.02) rotate(0.5deg) rotateX(2deg);
+    cursor: pointer;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.077);
+  }
+  .winner_card:nth-child(2){
+
+ 
+    outline:  2px solid rgb(248, 54, 120)
+  }
+    .winner_card:nth-child(3){
+        outline:  2px solid rgba(248, 54, 120,0.2)
+    }
+  .winner_card:nth-child(2)::after{
+    content: "🥇";
+    font-size: 2.3rem;
+    color: rgb(248, 54, 120);
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    transform: translate(50%, -50%);
+  }
+
+  .winner_card:nth-child(3)::after{
+    content: "🥈";
+    font-size: 2.3rem;
+    color: rgb(248, 54, 120);
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    transform: translate(50%, -50%);
+  }
+  
+  .winner_title {
+    background-color: rgb(248, 54, 120); /* Header Background */
+    color: white;
+    font-weight: bold;
+  }
+  .winner_title:hover{
+    transform: none !important;
+  }
+  
+  .winner_card_only {
+    background-color: #ffffff; /* Card Background */
+  }
+  
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+ 
+/* Style de la scrollbar */
+.winner_card::-webkit-scrollbar {
+    width: 12px; /* Largeur de la scrollbar */
+}
+
+/* Style de la piste de la scrollbar */
+.winner_card::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Couleur de la piste */
+    border-radius: 10px; /* Coins arrondis de la piste */
+}
+
+/* Style du pouce de la scrollbar */
+.winner_card::-webkit-scrollbar-thumb {
+    background-color: #F37335; /* Couleur du pouce */
+    border-radius: 10px; /* Coins arrondis du pouce */
+    border: 3px solid #e0e0e0; /* Bordure pour créer un écart */
+}
+
+/* Style du pouce de la scrollbar au survol */
+.winner_card::-webkit-scrollbar-thumb:hover {
+    background-color: #F73C8D; /* Couleur du pouce au survol */
+}
+
+/* Style du pouce de la scrollbar lors du clic */
+.winner_card::-webkit-scrollbar-thumb:active {
+    background-color: #F71C6D; /* Couleur du pouce lors du clic */
+}
